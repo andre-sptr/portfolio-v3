@@ -17,5 +17,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Andre Saputra" }],
   openGraph: { type: "website", locale: "en_US", title: "Andre Saputra — Engineering, Connected.", description: "Networking, automation, IoT, and practical digital solutions.", siteName: "Andre Saputra", ...(siteUrl ? { url: siteUrl } : {}), images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Andre Saputra — Networking, Automation & Digital Engineering" }] },
   twitter: { card: "summary_large_image", title: "Andre Saputra — Engineering, Connected.", description: "Networking, automation, IoT, and practical digital solutions.", images: ["/og-image.png"] },
-  icons: { icon: "/favicon.svg", apple: "/apple-icon.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=20261021", type: "image/x-icon", sizes: "16x16 32x32 48x48 64x64 128x128 256x256" },
+      { url: "/favicon-32.png?v=20261021", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.png?v=20261021", type: "image/png", sizes: "256x256" },
+    ],
+    shortcut: "/favicon.ico?v=20261021",
+    apple: { url: "/apple-icon.png?v=20261021", sizes: "180x180", type: "image/png" },
+  },
 };
